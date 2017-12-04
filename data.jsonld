@@ -1,0 +1,30 @@
+{ "@context": {
+  "helpdesk": "https://rawgit.com/sils-webinfo/helpdesk/master/vocab.ttl#",
+  "reviews": {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#member",
+    "@container": "@index"
+  },
+  "name": "http://schema.org/name",
+  "review": "http://schema.org/review",
+  "author": "http://schema.org/author"
+  },
+  "@id": "reviewsList",
+  "reviews":
+  { "fhs6jo":
+      { "@id":"reviews:review",
+        "name":"Review for Game 1",
+        "review":"This game is pretty good.",
+        "author":"someone@unc.edu"
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+}
