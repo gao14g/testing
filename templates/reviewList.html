@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Game Review List</title>
+</head>
+<body>
+  
+<div itemscope
+     itemtype = "http://schema.org/WebPage">
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li class="homepage"><a itemprop = "URL" rel="index" href="index.html">Home</a></li>
+      <li class="game-list"><a itemprop = "URL"rel="next" href="game_list.html">Game List</a></li>
+    </ul>
+  </nav>
+
+  <h1 itemprop = "headline" class = "page-title">Game 1 Reviews</h1>  
+
+  <div itemscope
+       itemtype = "http://schema.org/ItemList">
+    <h4 itemprop = "name" class= "game-review">Reviews For This Game</h4>
+    <ul>
+      <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
+        <a itemprop = "URL" rel="item" href="review.html">Review 1</a>
+        <meta itemprop = "position" content = "1">
+      </li>
+      <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
+        <a itemprop = "URL" rel="item" href="review.html">Review 2</a>
+        <meta itemprop = "position" content = "2">
+      </li>
+    </ul>
+  </div>
+
+  <form class="post-review" action="#" method="POST">
+    <h4>Post A Review</h4>
+    Username:<br>
+    <input type="text" name="username"><br>
+    Leave review:<br>
+    <input type="text" name="review"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+</body>
+</html>
