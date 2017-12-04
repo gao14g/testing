@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Review</title>
+</head>
+<body>
+
+<div itemscope
+     itemtype = "http://schema.org/WebPage">
+
+     <nav class="navbar">
+       <ul class="navbar-list">
+         <li class="homepage"><a itemprop = "URL" rel="index" href="index.html">Home</a></li>
+         <li class="game-list"><a itemprop = "URL" rel="next" href="game_list.html">Game List</a></li>
+       </ul>
+     </nav>
+
+     <div itemscope
+          class = "review-data"
+          itemtype = "http://schema.org/Review">
+       <h1 itemprop = "headline" class = "page-title">Game 1: Review 1</h1>
+
+          <div class = "ind-review">
+
+            <h4 itemprop = "name" >{{review.name}}</h4>
+            <p itemprop = "review" class = "review-text">
+              {{review.review}}
+            </p>
+            <p itemprop = "author">
+               written by: {{review.author}}
+            </p>
+          </div>
+       </div>
+     <!-- errors in the review?? -->
+
+
+     <form class = "update-review" method = "PUT">
+       <h4>Update your review</h4>
+       Username:<br>
+       <input type="text" name="username"><br>
+       Update review:<br>
+       <input type="text" name="review"><br>
+       <input type="submit" value="Submit">
+     </form>
+
+     <div>
+       <a itemprop = "URL" class = "game-review" rel = "prev" href="{{ url_for{'reviewList') }}">Back to Game 1 Review List</a>
+     </div>
+</div>
+</body>
+</html>
